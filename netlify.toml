@@ -1,0 +1,21 @@
+[dev]
+  command = "npm run dev"
+
+[build]
+  # Directory to change to before starting a build.
+  # This is where we will look for package.json/.nvmrc/etc.
+  base = "./"
+
+  # Build command. Replace with your build command.
+  command = "npm run build"
+
+  # Publish directory (relative to the root of your repo) that
+  # will be deployed to Netlify's CDN.
+  publish = "dist"
+
+
+[functions]
+  # Directory containing your serverless functions.
+  # By default, Netlify looks for functions in a "netlify/functions" directory.
+  # You can customize this if needed.
+  directory = "netlify/edge-functions"
